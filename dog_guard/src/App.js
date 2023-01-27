@@ -2,9 +2,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p> fjfjfkgjfjgfhgijdigejge</p>
+    <div className="app">
+      <header className="app__header">
+        <p> Надійний захист будівлі</p>
       </header>
     </div>
   );

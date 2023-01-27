@@ -1,34 +1,100 @@
+/* Connecting fonts */
 @font-face {
   font-family: "Lato";
   font-weight: 400;
-  src: url("../src/fonts/Lato-Regular.ttf") format("ttf");
+  src: url("../src/fonts/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 900;
-  src: url("../src/fonts/Lato-Black.ttf") format("ttf");
+  src: url("../src/fonts/Lato-Black.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 600;
-  src: url("../src/fonts/Lato-Semibold.ttf") format("ttf");
+  src: url("../src/fonts/Lato-Semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 800;
-  src: url("../src/fonts/Lato-Heavy.ttf") format("ttf");
+  src: url("../src/fonts/Lato-Heavy.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 500;
-  src: url("../src/fonts/Lato-Medium.ttf") format("ttf");
+  src: url("../src/fonts/Lato-Medium.ttf") format("truetype");
+}
+/* Null style */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+a,
+p,
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
 }
 
 body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
 }
