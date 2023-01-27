@@ -1,8 +1,34 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: url("../src/fonts/Lato-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  src: url("../src/fonts/Lato-Black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  src: url("../src/fonts/Lato-Semibold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 800;
+  src: url("../src/fonts/Lato-Heavy.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  src: url("../src/fonts/Lato-Medium.ttf") format("ttf");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato", sans-serif;
 }
