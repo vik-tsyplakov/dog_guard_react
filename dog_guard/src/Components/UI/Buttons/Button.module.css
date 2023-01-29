@@ -32,3 +32,12 @@
   border: none;
   color: #ffea29;
 }
+.button_cta {
+  line-height: 158%;
+  letter-spacing: 0.065em;
+}
+.button_cta:hover {
+  background: #e7e7e7;
+  border: 1px solid #000;
+  color: #000;
+}
