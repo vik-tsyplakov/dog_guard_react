@@ -1,12 +1,12 @@
 import "./App.css";
-import Button from "./Components/UI/Buttons/Button";
+import ButtonDefault from "./Components/UI/Buttons/ButtonDefault";
 
 function App() {
   return (
     <div className="app">
       <header className="app__header">
         <p> Надійний захист будівлі</p>
-        <Button text={"Захистити себе"} />
+        <ButtonDefault text={"Захистити себе"} path={"#"} />
       </header>
     </div>
   );

@@ -1,34 +1,20 @@
 .button {
+  display: inline-block;
   padding: 10px 15px;
-  gap: 10px;
-  width: 188px;
-  height: 51px;
-  color: #000000;
   background: #ffea29;
   border: 1px solid #000000;
   border-radius: 5px;
-  -webkit-box-flex: 0;
-  -ms-flex: none;
-  flex: none;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: all ease-in-out 200ms;
-  -o-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
-  /*button text*/
   font-family: "Lato";
   font-style: normal;
   font-weight: 900;
+  font-size: 20px;
   line-height: 153.5%;
   letter-spacing: 0.045em;
+  text-transform: capitalize;
+  color: #000000;
   white-space: nowrap;
-  font-size: 20px;
+  transition: all ease-in-out 200ms;
 }
-
 .button:hover {
   background: #000000;
   border: 1px solid #000000;
