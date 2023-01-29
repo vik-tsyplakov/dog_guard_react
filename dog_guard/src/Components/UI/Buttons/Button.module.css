@@ -52,3 +52,13 @@
   color: #e7e7e7;
   background: #000000;
 }
+@media (max-width: 375px) {
+  .button {
+    font-size: 15px;
+    max-width: 306px;
+  }
+  .button_modal,
+  .button_modalGrey {
+    padding: 10px 15px;
+  }
+}
