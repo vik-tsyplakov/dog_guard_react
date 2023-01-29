@@ -1,4 +1,5 @@
 import "./App.css";
+import ButtonClose from "./Components/UI/Buttons/ButtonClose";
 import ButtonCTA from "./Components/UI/Buttons/ButtonCTA";
 import ButtonDefault from "./Components/UI/Buttons/ButtonDefault";
 import ButtonDisabled from "./Components/UI/Buttons/ButtonDisabled";
@@ -17,6 +18,7 @@ function App() {
         <ButtonModal text={"Зареєструватись"} />
         <ButtonDisabled text={"Зареєструватись"} disabled={true} />
         <ButtonModalGrey text={"Повернутись до форми реєстрації"} />
+        <ButtonClose />
       </header>
     </div>
   );

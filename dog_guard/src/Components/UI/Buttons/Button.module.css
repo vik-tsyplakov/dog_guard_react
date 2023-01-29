@@ -52,6 +52,13 @@
   color: #e7e7e7;
   background: #000000;
 }
+.button_close {
+  background: transparent;
+}
+.button_close img {
+  width: 19.64px;
+  height: 17.84px;
+}
 @media (max-width: 375px) {
   .button {
     font-size: 15px;
@@ -60,5 +67,9 @@
   .button_modal,
   .button_modalGrey {
     padding: 10px 15px;
+  }
+  .button_close img {
+    width: 11.78px;
+    height: 11.78px;
   }
 }
