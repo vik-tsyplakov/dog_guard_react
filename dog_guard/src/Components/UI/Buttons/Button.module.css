@@ -19,6 +19,10 @@
   background: #000000;
   color: #ffea29;
 }
+.button:active {
+  background: #ffea29;
+  color: #000000;
+}
 .button_proposition {
   padding: 10px 90px;
   border: none;
@@ -28,9 +32,17 @@
   border: none;
   color: #ffea29;
 }
+.button_proposition:active {
+  background: #ffea29;
+  color: #000000;
+}
 .button_cta:hover {
   background: #e7e7e7;
   color: #000;
+}
+.button_cta:active {
+  background: #ffea29;
+  color: #000000;
 }
 .button_modal {
   width: 516px;
@@ -38,6 +50,10 @@
 .button_modal:hover {
   color: #ffea29;
   background: #000000;
+}
+.button_modal:active {
+  color: #000000;
+  background: #ffea29;
 }
 .button_modal:disabled {
   color: #8c8c8c;
@@ -52,8 +68,16 @@
   color: #e7e7e7;
   background: #000000;
 }
+.button_modalGrey:active {
+  color: #000000;
+  background: #e7e7e7;
+}
 .button_close {
   background: transparent;
+  opacity: 1;
+}
+.button_close:active {
+  opacity: 0.7;
 }
 .button_close img {
   width: 19.64px;
