@@ -3,6 +3,7 @@ import ButtonCTA from "./Components/UI/Buttons/ButtonCTA";
 import ButtonDefault from "./Components/UI/Buttons/ButtonDefault";
 import ButtonDisabled from "./Components/UI/Buttons/ButtonDisabled";
 import ButtonModal from "./Components/UI/Buttons/ButtonModal";
+import ButtonModalGrey from "./Components/UI/Buttons/ButtonModalGrey";
 import ButtonProposition from "./Components/UI/Buttons/ButtonProposition";
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <ButtonProposition text={"Обрати"} />
         <ButtonCTA text={"Дізнатися більше"} path={"#"} />
         <ButtonModal text={"Зареєструватись"} />
-        <ButtonDisabled text={"Зареєструватись"} disabled="true" />
+        <ButtonDisabled text={"Зареєструватись"} disabled={true} />
+        <ButtonModalGrey text={"Повернутись до форми реєстрації"} />
       </header>
     </div>
   );
