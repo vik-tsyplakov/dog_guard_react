@@ -1,0 +1,27 @@
+.myInput {
+  width: 100%;
+  padding: 10px 15px;
+  height: 48px;
+  max-width: 412px;
+  background: #ffffff;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 153.5%;
+  letter-spacing: 0.045em;
+  color: #000000;
+}
+.myInput:focus-visible {
+  outline: 2px solid #000000;
+}
+.myInput::placeholder {
+  color: #8c8c8c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 153.5%;
+  letter-spacing: 0.045em;
+  opacity: 1;
+}

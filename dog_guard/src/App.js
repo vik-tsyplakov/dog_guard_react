@@ -6,6 +6,7 @@ import ButtonDisabled from "./Components/UI/Buttons/ButtonDisabled";
 import ButtonModal from "./Components/UI/Buttons/ButtonModal";
 import ButtonModalGrey from "./Components/UI/Buttons/ButtonModalGrey";
 import ButtonProposition from "./Components/UI/Buttons/ButtonProposition";
+import Input from "./Components/UI/Input/Input";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <ButtonDisabled text={"Зареєструватись"} disabled={true} />
         <ButtonModalGrey text={"Повернутись до форми реєстрації"} />
         <ButtonClose />
+        <Input hint={"Почніть з +38 "} />
       </header>
     </div>
   );
