@@ -6,9 +6,13 @@ import ButtonDisabled from "./Components/UI/Buttons/ButtonDisabled";
 import ButtonModal from "./Components/UI/Buttons/ButtonModal";
 import ButtonModalGrey from "./Components/UI/Buttons/ButtonModalGrey";
 import ButtonProposition from "./Components/UI/Buttons/ButtonProposition";
+import Checkbox from "./Components/UI/Checkbox/Checkbox";
 import Input from "./Components/UI/Input/Input";
 
 function App() {
+  const privacyPolicy =
+    "https://www.freeprivacypolicy.com/live/edb06eb5-b70c-400a-b53a-5ae32a1ada39";
+
   return (
     <div className="app">
       <header className="app__header">
@@ -21,6 +25,12 @@ function App() {
         <ButtonModalGrey text={"Повернутись до форми реєстрації"} />
         <ButtonClose />
         <Input hint={"Почніть з +38 "} />
+        <Checkbox
+          label={"Погоджуюсь з "}
+          terms={"умовами сервісу."}
+          checked={false}
+          path={privacyPolicy}
+        />
       </header>
     </div>
   );

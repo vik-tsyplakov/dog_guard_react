@@ -1,0 +1,34 @@
+.checkbox__wrapper {
+  max-width: 352px;
+}
+.checkbox__wrapper input[type="checkbox"]:focus {
+  border: 1px solid #000000;
+}
+.checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+label span,
+.checkbox__wrapper span {
+  vertical-align: middle;
+}
+.checked {
+  position: relative;
+}
+.checked::before {
+  content: url("../../../img/input/mark.svg");
+  font-size: 1.5em;
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
