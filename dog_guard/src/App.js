@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Header from "./Components/Header/Header";
 import ButtonClose from "./Components/UI/Buttons/ButtonClose";
 import ButtonCTA from "./Components/UI/Buttons/ButtonCTA";
 import ButtonDefault from "./Components/UI/Buttons/ButtonDefault";
@@ -17,7 +18,6 @@ function App() {
 
   const [modal, setModal] = useState(false);
   const openModal = () => {
-    console.log("ddffdfdf");
     setModal(false);
   };
 
@@ -31,27 +31,7 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app__header">
-        <p> Надійний захист будівлі</p>
-        <ButtonDefault onClick={() => setModal(true)} text={"Захистити себе"} />
-        <ButtonProposition text={"Обрати"} />
-        <ButtonCTA text={"Дізнатися більше"} path={"#"} />
-        <ButtonModal text={"Зареєструватись"} />
-        <ButtonDisabled text={"Зареєструватись"} disabled={true} />
-        <ButtonModalGrey text={"Повернутись до форми реєстрації"} />
-        <ButtonClose />
-        <Input hint={"Почніть з +38 "} />
-        <Checkbox
-          label={"Погоджуюсь з "}
-          terms={"умовами сервісу."}
-          checked={false}
-          path={privacyPolicy}
-        />
-
-        <Modal visible={modal} setVisible={setModal}>
-          <Form setVisible={setModal} />
-        </Modal>
-      </header>
+      <Header setModal={setModal} />
     </div>
   );
 }

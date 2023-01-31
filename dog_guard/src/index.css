@@ -2,31 +2,36 @@
 @font-face {
   font-family: "Lato";
   font-weight: 400;
-  src: url("../src/fonts/Lato-Regular.ttf") format("truetype");
+  src: url("./fonts/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 900;
-  src: url("../src/fonts/Lato-Black.ttf") format("truetype");
+  src: url("./fonts/Lato-Black.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 600;
-  src: url("../src/fonts/Lato-Semibold.ttf") format("truetype");
+  src: url("./fonts/Lato-Semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 800;
-  src: url("../src/fonts/Lato-Heavy.ttf") format("truetype");
+  src: url("./fonts/Lato-Heavy.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 500;
-  src: url("../src/fonts/Lato-Medium.ttf") format("truetype");
+  src: url("./fonts/Lato-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 900;
+  src: url("./fonts/AlegreyaSans-Black.ttf") format("truetype");
 }
 /* Null style */
 * {
