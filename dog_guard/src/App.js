@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
 import ButtonClose from "./Components/UI/Buttons/ButtonClose";
 import ButtonCTA from "./Components/UI/Buttons/ButtonCTA";
 import ButtonDefault from "./Components/UI/Buttons/ButtonDefault";
@@ -32,6 +33,27 @@ function App() {
   return (
     <div className="app">
       <Header setModal={setModal} />
+      <Main />
+      <div>
+        <p> Надійний захист будівлі</p>
+
+        <ButtonProposition text={"Обрати"} />
+
+        <ButtonModal text={"Зареєструватись"} />
+        <ButtonDisabled text={"Зареєструватись"} disabled={true} />
+        <ButtonModalGrey text={"Повернутись до форми реєстрації"} />
+        <ButtonClose />
+        <Input hint={"Почніть з +38 "} />
+        <Checkbox
+          label={"Погоджуюсь з "}
+          terms={"умовами сервісу."}
+          checked={false}
+          path={privacyPolicy}
+        />
+        <Modal visible={modal} setVisible={setModal}>
+          <Form setVisible={setModal} />
+        </Modal>
+      </div>
     </div>
   );
 }

@@ -222,3 +222,70 @@
     display: none;
   }
 }
+/* Main */
+.main__container {
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+    90deg,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(7, 7, 7, 1) 83%
+  );
+  height: 100%;
+  min-height: 747px;
+}
+.main__block1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.block1__background {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.block1 {
+  display: block;
+  z-index: 1;
+  width: 100%;
+}
+.block1__main {
+  max-width: 656px;
+}
+.block1__title {
+  margin: 160px 0 8px;
+}
+.block1__button {
+  margin-top: 51px;
+}
+.block1__footer {
+  display: flex;
+  margin-top: 212px;
+  justify-content: space-between;
+}
+.lang_container {
+  display: flex;
+}
+.lang a {
+  margin-right: 48px;
+}
+.lang_active a {
+  text-decoration-line: underline;
+  font-weight: 900;
+}
+.scroll-button img {
+  margin-right: 6px;
+}
+.scroll-button a {
+  color: #ffffff;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.scroll-button a:hover {
+  text-decoration-line: underline;
+}
