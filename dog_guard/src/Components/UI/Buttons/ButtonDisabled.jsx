@@ -6,6 +6,7 @@ export default function ButtonDisabled(props) {
     <button
       disabled={props.disabled}
       className={cl.button + " " + cl.button_modal}
+      onClick={props.onClick}
     >
       {props.text}
     </button>
