@@ -8,7 +8,7 @@ export default function Main(props) {
   return (
     <main className="main__container">
       <section className="_container main__block1">
-        <img className="block1__background" src={background} alt="camera" />
+        {/* <img className="block1__background" src={background} alt="camera" /> */}
         <div className="block1">
           <div className="block1__main">
             <h1 className="main__title block1__title">
