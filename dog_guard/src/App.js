@@ -15,7 +15,7 @@ function App() {
   const privacyPolicy =
     "https://www.freeprivacypolicy.com/live/edb06eb5-b70c-400a-b53a-5ae32a1ada39";
 
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const openModal = () => {
     console.log("ddffdfdf");
     setModal(false);
