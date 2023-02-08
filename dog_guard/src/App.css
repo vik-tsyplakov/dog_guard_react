@@ -403,20 +403,21 @@
 .main__container2 {
   height: 100%;
 }
-.main__block2 {
-}
-.block2__about {
+.block2__about,
+.block2__possibility {
   display: block;
   margin: 100px auto 100px;
   max-width: 940px;
   width: 100%;
 }
-.about__text {
+.about__text,
+.possibility__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.about__text h2 {
+.about__text h2,
+.possibility__text h2 {
   white-space: nowrap;
   margin-right: 30px;
 }
@@ -430,38 +431,115 @@
   width: 100%;
   height: auto;
 }
+.possibility__img {
+  display: flex;
+  margin: 55px auto 0;
+  max-width: 748px;
+  width: 100%;
+  height: auto;
+}
+.possibility__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.possibility__item {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.possibility__item .icon1 {
+  margin-left: 3px;
+  margin-right: 25px;
+}
+.possibility__item .icon2 {
+  margin-left: 6px;
+  margin-right: 25px;
+}
+.possibility__item .icon3 {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+.possibility__item .icon4 {
+  margin-left: 6px;
+  margin-right: 24px;
+}
+.possibility__item p {
+  text-align: left;
+}
+@media (max-width: 1129px) {
+  .possibility__text {
+    display: block;
+    align-items: center;
+  }
+  .possibility__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .possibility__text h2 {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1024px) {
-  .block2__about {
+  .block2__about,
+  .block2__possibility {
     padding: 0 110px;
+  }
+  .possibility__text h2 {
+    margin: 0 auto 15px;
+  }
+}
+@media (max-width: 880px) {
+  .possibility__item {
+    margin-bottom: 17px;
   }
 }
 @media (max-width: 815px) {
-  .block2__about {
-    margin: 30px auto 30px;
+  .block2__about,
+  .block2__possibility {
+    margin: 30px auto 60px;
+  }
+  .possibility__img {
+    margin: 30px auto 0;
   }
   .about__text {
     display: block;
   }
-  .about__text h2 {
+  .about__text h2,
+  .possibility__text h2 {
     white-space: nowrap;
     margin: 0 auto 10px;
   }
 }
 @media (max-width: 720px) {
-  .block2__about {
+  .block2__about,
+  .block2__possibility {
     padding: 0 70px;
   }
 }
 @media (max-width: 580px) {
-  .block2__about {
+  .block2__about,
+  .block2__possibility {
     padding: 0 30px;
   }
 }
 @media (max-width: 465px) {
-  .block2__about {
+  .block2__about,
+  .block2__possibility {
     padding: 0;
   }
-  .about__img {
+  .about__img,
+  .possibility__img {
     margin: 30px auto 0;
+  }
+}
+@media (max-width: 375px) {
+  .possibility__item {
+    max-width: 300px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
