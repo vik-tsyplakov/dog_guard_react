@@ -83,6 +83,13 @@
   width: 19.64px;
   height: 17.84px;
 }
+@media (max-width: 520px) {
+  .button {
+    font-size: 15px;
+    max-width: 375px;
+  }
+}
+
 @media (max-width: 375px) {
   .button {
     font-size: 15px;
@@ -95,5 +102,15 @@
   .button_close img {
     width: 11.78px;
     height: 11.78px;
+  }
+}
+@media (max-width: 320px) {
+  .button {
+    font-size: 15px;
+    max-width: 280px;
+  }
+  .button_modal,
+  .button_modalGrey {
+    padding: 10px 5px;
   }
 }
