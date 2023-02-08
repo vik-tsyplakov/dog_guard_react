@@ -99,8 +99,11 @@
     font-size: 15px;
     max-width: 375px;
   }
+  .button_openModal,
+  .button_menu {
+    padding: 5px 5px;
+  }
 }
-
 @media (max-width: 375px) {
   .button {
     font-size: 15px;

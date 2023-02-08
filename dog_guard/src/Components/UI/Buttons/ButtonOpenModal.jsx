@@ -1,11 +1,12 @@
 import React from "react";
 import cl from "./Button.module.css";
 
-export default function ButtonMenu(props) {
+export default function ButtonOpenModal(props) {
   return (
     <button
-      className={cl.button + " " + cl.button_menu}
+      type="button"
       onClick={props.onClick}
+      className={cl.button + " " + cl.button_openModal}
     >
       {props.text}
     </button>

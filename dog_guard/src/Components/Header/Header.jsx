@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonDefault from "../UI/Buttons/ButtonDefault";
+import ButtonOpenModal from "../UI/Buttons/ButtonOpenModal";
 import ButtonMenu from "../UI/Buttons/ButtonMenu";
 import "./../../App.css";
 import logo from "./../../img/header/logo.svg";
@@ -46,13 +46,17 @@ export default function Header(props) {
               </span>
             </a>
           </div>
-          <ButtonDefault
-            onClick={() => {
-              props.setModal(true);
-            }}
-            text={"Захистити себе"}
-          />
-          <ButtonMenu text={"Меню"} />
+          <div className="header__buttonOpenModal">
+            <ButtonOpenModal
+              onClick={() => {
+                props.setModal(true);
+              }}
+              text={"Захистити себе"}
+            />
+          </div>
+          <div className="header__buttonMenu">
+            <ButtonMenu text={"Меню"} />
+          </div>
         </div>
       </div>
     </header>
