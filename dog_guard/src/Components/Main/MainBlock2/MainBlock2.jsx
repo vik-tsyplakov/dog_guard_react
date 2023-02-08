@@ -5,6 +5,7 @@ import icon_alarms from "./../../../img/main/block2/icon_alarms.svg";
 import icon_camera from "./../../../img/main/block2/icon_camera.svg";
 import icon_dog from "./../../../img/main/block2/icon_dog.svg";
 import icon_security_service from "./../../../img/main/block2/icon_security_service.svg";
+
 export default function MainBlock2() {
   return (
     <section className="main__container2">

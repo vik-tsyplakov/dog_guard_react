@@ -543,3 +543,13 @@
     justify-content: space-between;
   }
 }
+/* Main Container 3*/
+.main__container3 {
+  height: 100%;
+}
+.block3__offers {
+  display: block;
+  margin: 100px auto 100px;
+  max-width: 1180px;
+  width: 100%;
+}
