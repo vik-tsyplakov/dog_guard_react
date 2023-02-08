@@ -301,11 +301,25 @@
 .block1__button {
   margin-top: 51px;
 }
+@media (max-width: 440px) {
+  .block1__button {
+    margin-top: 150px;
+  }
+}
 .block1__footer {
   display: flex;
-  margin-top: 190px;
+  margin-top: 200px;
   margin-bottom: 40px;
   justify-content: space-between;
+}
+@media (max-width: 440px) {
+  .block1__main {
+    text-align: center;
+  }
+  .block1__footer {
+    margin-top: 12px;
+    justify-content: center;
+  }
 }
 .lang_container {
   display: flex;
@@ -316,6 +330,11 @@
 .lang_active a {
   text-decoration-line: underline;
   font-weight: 900;
+}
+@media (max-width: 440px) {
+  .lang a {
+    display: none;
+  }
 }
 .scroll-button img {
   margin-right: 6px;
