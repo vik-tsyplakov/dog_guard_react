@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonDefault from "../UI/Buttons/ButtonDefault";
+import ButtonMenu from "../UI/Buttons/ButtonMenu";
 import "./../../App.css";
 import logo from "./../../img/header/logo.svg";
 import phone from "./../../img/header/phone.svg";
@@ -11,10 +12,10 @@ export default function Header(props) {
         <div className="header__logo">
           <a href="#">
             <img src={logo} alt="logo dog" />
-            <div className="logo__text">
+            <span className="logo__text">
               DOG <br />
               GUARD
-            </div>
+            </span>
           </a>
         </div>
         <div className="header__info">
@@ -51,6 +52,7 @@ export default function Header(props) {
             }}
             text={"Захистити себе"}
           />
+          <ButtonMenu text={"Меню"} />
         </div>
       </div>
     </header>

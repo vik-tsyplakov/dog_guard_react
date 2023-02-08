@@ -72,6 +72,17 @@
   color: #000000;
   background: #e7e7e7;
 }
+.button_menu {
+  background: #e7e7e7;
+}
+.button_modalGrey:hover {
+  color: #e7e7e7;
+  background: #000000;
+}
+.button_modalGrey:active {
+  color: #000000;
+  background: #e7e7e7;
+}
 .button_close {
   background: transparent;
   opacity: 1;

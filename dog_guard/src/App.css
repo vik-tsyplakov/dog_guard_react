@@ -159,15 +159,15 @@
 }
 .header__logo {
   display: flex;
+}
+.header__logo a {
+  display: inline-flex;
   align-items: center;
 }
 .header__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header__logo a {
-  display: inline-flex;
 }
 .logo__text {
   font-family: "Alegreya Sans";
@@ -176,7 +176,6 @@
   font-size: 30px;
   letter-spacing: 0.045em;
   color: #000000;
-  padding-top: 7px;
 }
 .header__nav {
   display: flex;
@@ -214,10 +213,42 @@
     display: none;
   }
 }
+@media (max-width: 1024px) {
+  .header__container {
+    height: 138px;
+  }
+  .header__logo img {
+    width: 74px;
+    height: 75px;
+  }
+  .logo__text {
+    font-size: 24px;
+  }
+}
 @media (max-width: 992px) {
   .header__nav {
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .header__phone {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+  .header__container {
+    height: 98px;
+  }
+  .header__logo img {
+    width: 61px;
+    height: 60px;
+  }
+  .logo__text {
+    font-size: 16px;
   }
 }
 /* Main */
