@@ -17,7 +17,7 @@ export default function OfferCard(props) {
         <ul>{list}</ul>
       </div>
       <div className={cl.offer__footer}>
-        <p className="offer__title">1000 грн / місяць</p>
+        <p className="offer__title">{props.price} грн / місяць</p>
         <div className={cl.offer__button}>
           <ButtonProposition text={"Обрати"} />
         </div>

@@ -556,7 +556,27 @@
 .block3__offers h2 {
   margin-bottom: 50px;
 }
+.block3__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1370px) {
+  .block3__cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .block3__offers {
+    margin: 80px auto 50px;
+  }
+}
 @media (max-width: 375px) {
+  .block3__offers {
+    margin: 70px auto 25px;
+  }
   .block3__offers h2 {
     margin-bottom: 15px;
   }
