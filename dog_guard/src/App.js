@@ -3,12 +3,9 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import ButtonClose from "./Components/UI/Buttons/ButtonClose";
-import ButtonCTA from "./Components/UI/Buttons/ButtonCTA";
-import ButtonDefault from "./Components/UI/Buttons/ButtonDefault";
 import ButtonDisabled from "./Components/UI/Buttons/ButtonDisabled";
 import ButtonModal from "./Components/UI/Buttons/ButtonModal";
 import ButtonModalGrey from "./Components/UI/Buttons/ButtonModalGrey";
-import ButtonProposition from "./Components/UI/Buttons/ButtonProposition";
 import Checkbox from "./Components/UI/Checkbox/Checkbox";
 import Input from "./Components/UI/Input/Input";
 import Modal from "./Components/UI/Modal/Modal";
@@ -35,10 +32,6 @@ function App() {
       <Header setModal={setModal} />
       <Main />
       <div>
-        <p> Надійний захист будівлі</p>
-
-        <ButtonProposition text={"Обрати"} />
-
         <ButtonModal text={"Зареєструватись"} />
         <ButtonDisabled text={"Зареєструватись"} disabled={true} />
         <ButtonModalGrey text={"Повернутись до форми реєстрації"} />

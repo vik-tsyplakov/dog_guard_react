@@ -59,7 +59,7 @@
   text-align: center;
   letter-spacing: 0.045em;
 }
-.proposition__title {
+.offer__title {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -68,7 +68,7 @@
   text-align: center;
   letter-spacing: 0.045em;
 }
-.proposition__text {
+.offer__text {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -119,10 +119,10 @@
   .body__text {
     font-size: 16px;
   }
-  .proposition__title {
+  .offer__title {
     font-size: 20px;
   }
-  .proposition__text {
+  .offer__text {
     font-size: 16px;
   }
   .footer__text {
@@ -142,10 +142,10 @@
   .body__text {
     font-size: 14px;
   }
-  .proposition__title {
+  .offer__title {
     font-size: 18px;
   }
-  .proposition__text {
+  .offer__text {
     font-size: 14px;
   }
   .footer__text {
@@ -552,4 +552,12 @@
   margin: 100px auto 100px;
   max-width: 1180px;
   width: 100%;
+}
+.block3__offers h2 {
+  margin-bottom: 50px;
+}
+@media (max-width: 375px) {
+  .block3__offers h2 {
+    margin-bottom: 15px;
+  }
 }
