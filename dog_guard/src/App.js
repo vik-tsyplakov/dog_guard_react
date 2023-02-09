@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import Footer from "./Components/Footer/Footer";
 import ButtonClose from "./Components/UI/Buttons/ButtonClose";
 import ButtonDisabled from "./Components/UI/Buttons/ButtonDisabled";
 import ButtonModal from "./Components/UI/Buttons/ButtonModal";
@@ -31,6 +32,7 @@ function App() {
     <div className="app">
       <Header setModal={setModal} />
       <Main />
+      <Footer />
       <div>
         <ButtonModal text={"Зареєструватись"} />
         <ButtonDisabled text={"Зареєструватись"} disabled={true} />
