@@ -15,6 +15,7 @@ export default function Footer() {
               href="https://www.behance.net/alexandra_jang"
               className="link_footer"
               target="_blank"
+              rel="noreferrer"
             >
               Циплаковою Олександрою
             </a>

@@ -1,0 +1,8 @@
+.formsModal__container {
+  width: 100%;
+  height: 100%;
+}
+.formsModal__closeButton {
+  display: flex;
+  justify-content: end;
+}

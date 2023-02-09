@@ -10,6 +10,7 @@ import ButtonModalGrey from "./Components/UI/Buttons/ButtonModalGrey";
 import Checkbox from "./Components/UI/Checkbox/Checkbox";
 import Input from "./Components/UI/Input/Input";
 import Modal from "./Components/UI/Modal/Modal";
+import FormModal1 from "./Components/FormsModal/FormModal1";
 
 function App() {
   const privacyPolicy =
@@ -18,14 +19,6 @@ function App() {
   const [modal, setModal] = useState(false);
   const openModal = () => {
     setModal(false);
-  };
-
-  const Form = (props) => {
-    return (
-      <div style={{ background: "red", height: "300px", width: "300px" }}>
-        dcdcd
-      </div>
-    );
   };
 
   return (
@@ -46,7 +39,7 @@ function App() {
           path={privacyPolicy}
         />
         <Modal visible={modal} setVisible={setModal}>
-          <Form setVisible={setModal} />
+          <FormModal1 setVisible={setModal} setModal={setModal} />
         </Modal>
       </div>
     </div>
