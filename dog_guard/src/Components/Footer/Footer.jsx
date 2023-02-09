@@ -11,7 +11,11 @@ export default function Footer() {
           <div className="footer__item ">2022 © Всі права захищено. </div>
           <div className="footer__item">
             Дизайн створено: <br />
-            <a href="" className="link_footer">
+            <a
+              href="https://www.behance.net/alexandra_jang"
+              className="link_footer"
+              target="_blank"
+            >
               Циплаковою Олександрою
             </a>
           </div>
