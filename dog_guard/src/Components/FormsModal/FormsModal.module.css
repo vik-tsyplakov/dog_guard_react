@@ -6,3 +6,16 @@
   display: flex;
   justify-content: end;
 }
+.formsModal__content h2 {
+  margin-top: 10px;
+}
+.formsModal__registration {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.formsModal__confirmation {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
