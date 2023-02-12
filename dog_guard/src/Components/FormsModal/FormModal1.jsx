@@ -4,8 +4,10 @@ import Input from "../UI/Input/Input";
 import Checkbox from "../UI/Checkbox/Checkbox";
 import cl from "./FormsModal.module.css";
 import ButtonModal from "../UI/Buttons/ButtonModal";
+import ButtonDisabled from "../UI/Buttons/ButtonDisabled";
 
 export default function FormModal1(props) {
+  const isChecked = false;
   return (
     <div className={cl.formsModal__container}>
       <div className={cl.formsModal__closeButton}>
@@ -30,7 +32,11 @@ export default function FormModal1(props) {
               path={props.privacyPolicy}
             />
           </div>
-          {<ButtonModal text={"Зареєструватись"} />}
+          {isChecked ? (
+            <ButtonModal text={"Зареєструватись"} />
+          ) : (
+            <ButtonDisabled text={"Зареєструватись"} disabled={true} />
+          )}
         </form>
       </div>
     </div>
