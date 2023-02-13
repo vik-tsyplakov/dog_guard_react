@@ -135,8 +135,16 @@
   .offer__text {
     font-size: 16px;
   }
+  .modal__title {
+    font-size: 33px;
+  }
   .footer__text {
     font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .modal__title {
+    font-size: 25px;
   }
 }
 @media (max-width: 375px) {
@@ -157,6 +165,9 @@
   }
   .offer__text {
     font-size: 14px;
+  }
+  .modal__title {
+    font-size: 25px;
   }
   .footer__text {
     font-size: 12px;

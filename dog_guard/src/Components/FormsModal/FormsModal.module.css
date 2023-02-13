@@ -8,14 +8,48 @@
 }
 .formsModal__content h2 {
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 .formsModal__registration {
   display: block;
   text-align: center;
   margin: 0 auto;
 }
+.formsModal__titleHint {
+  text-align: left;
+  margin: 0 auto 5px;
+  max-width: 412px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 153.5%;
+  letter-spacing: 0.045em;
+}
+.formsModal__input {
+  margin-bottom: 20px;
+}
 .formsModal__confirmation {
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   justify-content: center;
+}
+@media (max-width: 1024px) {
+  .formsModal__titleHint {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .formsModal__content h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .formsModal__input {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .formsModal__titleHint {
+    font-size: 14px;
+  }
 }

@@ -21,12 +21,16 @@ export default function FormModal1(props) {
         />
       </div>
       <div className={cl.formsModal__content}>
-        <h2 className="body__title">Відчуйте реальну безпеку</h2>
+        <h2 className="body__title modal__title">Відчуйте реальну безпеку</h2>
         <form action="" className={cl.formsModal__registration}>
-          <p htmlFor="">Ваше ім’я</p>
-          <Input hint={"Іван  Сергійович"} />
-          <p htmlFor="">Ваш номер телефону</p>
-          <Input hint={"Почніть з +38 "} />
+          <p className={cl.formsModal__titleHint}>Ваше ім’я</p>
+          <div className={cl.formsModal__input}>
+            <Input hint={"Іван  Сергійович"} />
+          </div>
+          <p className={cl.formsModal__titleHint}>Ваш номер телефону</p>
+          <div className={cl.formsModal__input}>
+            <Input hint={"Почніть з +38 "} className={cl.formsModal__input} />
+          </div>
           <div className={cl.formsModal__confirmation}>
             <Checkbox
               label={"Погоджуюсь з "}

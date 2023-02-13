@@ -45,7 +45,8 @@
   color: #000000;
 }
 .button_modal {
-  width: 516px;
+  max-width: 516px;
+  width: 100%;
 }
 .button_modal:hover {
   color: #ffea29;
@@ -61,7 +62,8 @@
   border: 1px solid #8c8c8c;
 }
 .button_modalGrey {
-  width: 516px;
+  max-width: 516px;
+  width: 100%;
   background: #e7e7e7;
 }
 .button_modalGrey:hover {

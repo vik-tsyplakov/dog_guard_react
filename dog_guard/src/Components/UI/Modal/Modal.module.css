@@ -36,7 +36,7 @@
     min-width: 500px;
     padding: 15px;
     max-width: 650px;
-    max-height: 470px;
+    max-height: 480px;
   }
 }
 @media (max-width: 768px) {
@@ -44,15 +44,19 @@
     min-width: 350px;
     padding: 10px;
     max-width: 450px;
-    max-height: 440px;
+    max-height: 490px;
   }
 }
-
 @media (max-width: 550px) {
   .modalContent {
     min-width: 250px;
     padding: 9px;
     max-width: 316px;
+    max-height: 470px;
+  }
+}
+@media (max-width: 375px) {
+  .modalContent {
     max-height: 440px;
   }
 }
