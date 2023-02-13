@@ -1,31 +1,33 @@
 import React from "react";
-import { useState } from "react";
+
 import "./../.././../App.css";
 import cl from "./Checkbox.module.css";
 
-export default function Checkbox({ label, checked, ...props }) {
-  const defaultChecked = checked ? checked : false;
-  const [isChecked, setIsChecked] = useState(defaultChecked);
-
+export default function Checkbox({ ...props }) {
   return (
     <>
       <div className={[cl.checkbox__wrapper, "body__text"].join(" ")}>
         <label>
           <input
-            className={[cl.checkbox, isChecked ? cl.checked : ""].join(" ")}
+            className={[cl.checkbox, props.isChecked ? cl.checked : ""].join(
+              " "
+            )}
             type="checkbox"
-            onChange={() => setIsChecked((prev) => !prev)}
-            {...props}
+            onChange={() => props.setIsChecked((prev) => !prev)}
           />
-          <span>{label}</span>
+          <span>{props.label}</span>
         </label>
         <span>
-          <a href={props.path} target="_blank" className="link">
+          <a
+            href={props.path}
+            target="_blank"
+            rel="noreferrer"
+            className="link"
+          >
             {props.terms}
           </a>
         </span>
       </div>
-      <p>{isChecked ? "Selected" : "Unchecked"}</p>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonClose from "../UI/Buttons/ButtonClose";
 import Input from "../UI/Input/Input";
 import Checkbox from "../UI/Checkbox/Checkbox";
@@ -7,7 +7,10 @@ import ButtonModal from "../UI/Buttons/ButtonModal";
 import ButtonDisabled from "../UI/Buttons/ButtonDisabled";
 
 export default function FormModal1(props) {
-  const isChecked = false;
+  const checked = false;
+  const defaultChecked = checked ? checked : false;
+  const [isChecked, setIsChecked] = useState(defaultChecked);
+
   return (
     <div className={cl.formsModal__container}>
       <div className={cl.formsModal__closeButton}>
@@ -28,7 +31,8 @@ export default function FormModal1(props) {
             <Checkbox
               label={"Погоджуюсь з "}
               terms={"умовами сервісу."}
-              checked={false}
+              setIsChecked={setIsChecked}
+              isChecked={isChecked}
               path={props.privacyPolicy}
             />
           </div>

@@ -22,13 +22,13 @@ export default function Footer() {
           </div>
           <div className="footer__item">
             <div className="footer__social">
-              <a href="/">
+              <a href="/" target="_blank" rel="noreferrer">
                 <img src={facebook} alt="facebook DogGuard" />
               </a>
-              <a href="/">
+              <a href="/" target="_blank" rel="noreferrer">
                 <img src={instagram} alt="instagram DogGuard" />
               </a>
-              <a href="/">
+              <a href="/" target="_blank" rel="noreferrer">
                 <img src={youtube} alt="youtube DogGuard" />
               </a>
             </div>
