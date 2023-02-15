@@ -10,6 +10,11 @@ export default function FormModal1(props) {
   const checked = false;
   const defaultChecked = checked ? checked : false;
   const [isChecked, setIsChecked] = useState(defaultChecked);
+  const [valueName, setValueName] = useState("");
+  let submitFn = (e) => {
+    e.preventDefault();
+    alert(`submit ${valueName}`);
+  };
 
   return (
     <div className={cl.formsModal__container}>
@@ -22,14 +27,26 @@ export default function FormModal1(props) {
       </div>
       <div className={cl.formsModal__content}>
         <h2 className="body__title modal__title">Відчуйте реальну безпеку</h2>
-        <form action="" className={cl.formsModal__registration}>
+        <form className={cl.formsModal__registration} onSubmit={submitFn}>
           <p className={cl.formsModal__titleHint}>Ваше ім’я</p>
           <div className={cl.formsModal__input}>
-            <Input hint={"Іван  Сергійович"} />
+            <Input
+              hint={"Іван  Сергійович"}
+              required={"required"}
+              value={valueName}
+            />
           </div>
           <p className={cl.formsModal__titleHint}>Ваш номер телефону</p>
           <div className={cl.formsModal__input}>
-            <Input hint={"Почніть з +38 "} className={cl.formsModal__input} />
+            <Input
+              hint={"Почніть з +380 "}
+              type="tel"
+              className={cl.formsModal__input}
+              pattern="^(\+380|)[0-9]{9}$"
+              minlength={13}
+              maxlength={13}
+              required={"required"}
+            />
           </div>
           <div className={cl.formsModal__confirmation}>
             <Checkbox
@@ -41,7 +58,7 @@ export default function FormModal1(props) {
             />
           </div>
           {isChecked ? (
-            <ButtonModal text={"Зареєструватись"} />
+            <ButtonModal text={"Зареєструватись"} type={"submit"} />
           ) : (
             <ButtonDisabled text={"Зареєструватись"} disabled={true} />
           )}

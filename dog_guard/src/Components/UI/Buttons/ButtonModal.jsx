@@ -6,6 +6,7 @@ export default function ButtonModal(props) {
     <button
       className={cl.button + " " + cl.button_modal}
       onClick={props.onClick}
+      type={props.type}
     >
       {props.text}
     </button>
