@@ -32,8 +32,10 @@ export default function FormModal1(props) {
           <div className={cl.formsModal__input}>
             <Input
               hint={"Іван  Сергійович"}
+              type="text"
+              pattern="^[а-яА-ЯёЁa-zA-Z-а-щА-ЩЬьЮюЯяЇїІіЄєҐґ+\s]+$"
               required={"required"}
-              value={valueName}
+              // value={valueName}
             />
           </div>
           <p className={cl.formsModal__titleHint}>Ваш номер телефону</p>

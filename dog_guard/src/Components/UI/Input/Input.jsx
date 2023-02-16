@@ -10,6 +10,7 @@ export default function Input(props) {
       minlength={props.minlength}
       pattern={props.pattern}
       required={props.required}
+      type={props.type}
     />
   );
 }
